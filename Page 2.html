@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>Page 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            width: 300px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            margin-bottom: 15px;
+            font-size: 22px;
+            padding: 12px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .sidebar a:hover {
+            background-color: #555;
+        }
+        .main-content {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+        }
+        header {
+            background-color: lightblue;
+            padding: 30px;
+            text-align: center;
+            font-size: 40px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .grid-item {
+            background-color: #f0f0f0;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 350px;
+        }
+        .grid-item img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .description {
+            background-color: #e0e0e0;
+            padding: 50px;
+            text-align: center;
+        }
+        .nav-arrows {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+        }
+        .nav-arrows button {
+            padding: 15px 30px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 22px;
+        }
+        .nav-arrows button:hover {
+            background-color: #145dbf;
+        }
+
+        @media screen and (min-width: 1200px) {
+            body {
+                font-size: 20px;
+            }
+            .sidebar a {
+                font-size: 24px;
+            }
+            header {
+                font-size: 50px;
+            }
+            .nav-arrows button {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="https://www.facebook.com/Gilplays">Facebook Vlogging</a>
+        <a href="https://www.facebook.com/borgerkasakenboy">Facebook Content Creating</a> 
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Facebook Vlog</h1>
+        </header>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="vlogging.jpg" alt="Vlogging Image">
+            </div>
+            <div class="grid-item">
+                <img src="contentcreating.jpg" alt="Content Creating Image">
+            </div>
+            <div class="grid-item">
+                <img src="sharingposting.jpg" alt="Sharing & Posting Image">
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <p>Vlogging is making and sharing personal videos, often about daily life, on platforms like YouTube.</p>
+            </div>
+            <div class="grid-item">
+                <p>Content creating is making and sharing digital media, like videos or posts, to engage an audience online.</p>
+            </div>
+            <div class="grid-item">
+                <p>Sharing involves privately sending photos to specific people, while posting makes them available to a broader audience on public platforms.</p>
+            </div>
+        </div>
+        <div class="nav-arrows">
+            <button onclick="location.href='p1.html'">&lt; Prev</button>
+            <button onclick="location.href='p3.html'">Next &gt;</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Facebook Settings</title>
+</head>
+<body style="background-color: #F0F2F5; color: black; font-family: Arial, sans-serif; text-align: center; font-size: 18px;">
+
+    <h2 style="color: #1877F2; font-size: 50px;">Facebook Settings</h2>
+    <p style="font-size: 50px;">Customize the display of videos and select files for upload.</p>
+
+    <form action="p4.html" method="get">
+        <div style="margin: auto; width: 100%; border: 2px solid #1877F2; padding: 50px; background-color: white; text-align: left; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); font-size: 18px;">
+
+            <label for="color" style="display: block; margin: 10px 0; color: #1877F2; font-weight: bold; font-size: 18px;">Color:</label>
+            <div style="display: inline-block; margin-right: 20px;">
+                <input type="radio" id="color-blue" name="color" value="blue">
+                <label for="color-blue" style="font-size: 50px;">Blue</label>
+            </div>
+            <div style="display: inline-block; margin-right: 20px;">
+                <input type="radio" id="color-black" name="color" value="black">
+                <label for="color-black" style="font-size: 50px;">Black</label>
+            </div>
+
+            <label for="paper-type" style="display: block; margin: 30px 0; color: #1877F2; font-weight: bold; font-size: 18px;">Video Category:</label>
+            <select id="paper-type" name="video-category" style="width: 100%; padding: 20px; border: 1px solid #1877F2; border-radius: 5px; font-size: 16px;">
+                <option value="vlog">Vlogging</option>
+                <option value="tutorial">Content creating</option>
+                <option value="gaming">Posting sharing</option>
+            </select>
+
+            <label for="paper-size" style="display: block; margin: 10px 0; color: #1877F2; font-weight: bold; font-size: 18px;">Resolution:</label>
+            <select id="paper-size" name="resolution" style="width: 100%; padding: 10px; border: 1px solid #1877F2; border-radius: 5px; font-size: 16px;">
+                <option value="720p">720p</option>
+                <option value="1080p">1080p</option>
+                <option value="4K">4K</option>
+            </select>
+
+            <label for="upload-file" style="display: block; margin: 10px 0; color: #1877F2; font-weight: bold; font-size: 18px;">Select a file to upload:</label>
+            <input type="file" id="upload-file" name="upload-file" style="width: 100%; padding: 10px; border: 1px solid #1877F2; border-radius: 5px; font-size: 16px;">
+
+            <input type="submit" value="Apply Settings" style="margin-top: 20px; padding: 10px; width: 100%; background-color: #1877F2; color: white; border: none; font-size: 18px; border-radius: 5px; cursor: pointer;">
+        </div>
+    </form>
+
+    <div style="margin-top: 30px;">
+        <a href="Page 2.html" style="padding: 10px 20px; background-color: #1877F2; color: white; text-decoration: none; margin: 10px; display: inline-block; font-size: 16px; border-radius: 50px;">Prev</a>
+        <a href="p4.html" style="padding: 10px 20px; background-color: #1877F2; color: white; text-decoration: none; margin: 10px; display: inline-block; font-size: 16px; border-radius: 50px;">Next</a>
+    </div>
+
+</body>
+</html>
